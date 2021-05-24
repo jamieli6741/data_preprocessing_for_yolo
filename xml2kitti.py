@@ -1,4 +1,3 @@
-from magic.data import ImgDataset, ConcatDataset
 import xml.etree.ElementTree as ET
 import os
 
