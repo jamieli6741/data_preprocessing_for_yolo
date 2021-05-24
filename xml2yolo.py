@@ -4,9 +4,6 @@ from tqdm import tqdm
 
 
 def load_classes(path):
-    """
-    Loads class labels at 'path'
-    """
     fp = open(path, 'r')
     names = fp.read().split('\n')[:-1]
     return names
@@ -19,11 +16,7 @@ def convert(size, box):
     y = (box[2] + box[3]) / 2.0 - 1
     w = box[1] - box[0]
     h = box[3] - box[2]
-    x = x * dw
-    w = w * dw
-    y = y * dh
-    h = h * dh
-    return (x, y, w, h)
+    return (x*dw, y*dh, w*dw, h*dh)
 
 
 def convert_annotation(image_id, annotations_dir, labels_dir, classes):
