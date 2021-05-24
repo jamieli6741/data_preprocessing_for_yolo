@@ -76,10 +76,3 @@ def xml2yolo(path, classes):
 if __name__ == '__main__':
     classes = ['traffic_light']
     xml2yolo(path="/media/liyq/Storage/dataset/rubbish/zkhy_for_classify", classes=classes)
-
-
-
-
-
-
-
