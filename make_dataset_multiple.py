@@ -7,12 +7,7 @@ dataset_path/
     |
     |-- labels/
     |   |-- label1.txt
-|-- dataset2/
-    |-- images/
-    |   |-- image1.png
-    |
-    |-- labels/
-    |   |-- label1.txt
+...
 """
 
 import os, random, shutil
@@ -69,20 +64,3 @@ if __name__ == '__main__':
         print()
         print("Start splitting dataset %s ..." % dir)
         splitDataset(imageDir, labelDir, TarDir_test, TarDir_train, rate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
