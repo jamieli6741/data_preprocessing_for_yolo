@@ -1,11 +1,3 @@
-#!/usr/bin/env python
-#-*- coding:utf-8 -*-
-# @Time    : 19-4-21 上午10:31
-# @Author  : chen
-
-"""
-从单个视频中截图
-"""
 import cv2
 import argparse
 import os
